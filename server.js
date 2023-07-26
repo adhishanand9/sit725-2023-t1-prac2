@@ -12,7 +12,7 @@ app.get('/addTwoNumbers', function (req,res) {
     let numA = req.query.numA;
     let numB = req.query.numB;
     let sum = parseInt(numA) + parseInt(numB);
-    let answer = {data:sum, message:'Addition Successful', statusCode:200}
+    let answer = {Answer:sum, message:'Addition Successful', statusCode:200}
     console.log(answer)
     res.json(answer);
 });
